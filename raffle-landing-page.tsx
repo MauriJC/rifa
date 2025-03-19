@@ -144,8 +144,11 @@ export default function RaffleLandingPage() {
           </Tabs>
 
           <div className="flex justify-center mt-8">
-            <Button className="bg-gradient-to-r from-primary to-pink-600 w-[50%] hover:from-primary/90 hover:to-pink-600/90 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all">
-              <a href="https://wa.me/543815584640" target="_blank">
+            <Button className="bg-gradient-to-r from-primary to-pink-600 hover:from-primary/90 hover:to-pink-600/90 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all">
+              <a
+                href="https://wa.me/543815584640?text=Hola%2C%20me%20gustaria%20comprar%20numeros%20de%20la%20rifa"
+                target="_blank"
+                rel="noopener noreferrer">
                 ¡Compra tu número ahora!
               </a>
             </Button>
