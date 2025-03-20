@@ -145,7 +145,7 @@ export const tickets: { "id": number, "state": string }[] = [
     { "id": 144, "state": "available" },
     { "id": 145, "state": "available" },
     { "id": 146, "state": "available" },
-    { "id": 147, "state": "available" },
+    { "id": 147, "state": "unavailable" },
     { "id": 148, "state": "available" },
     { "id": 149, "state": "available" },
     { "id": 150, "state": "available" },
