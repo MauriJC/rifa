@@ -2,7 +2,7 @@
 "use client"
 
 import { useState } from "react"
-import { Ticket, Trophy, Sparkles, Drumstick, CandyCane, Shirt, Milk, ShieldQuestion, CakeSlice, SquareSquare, Beaker, Footprints, Box } from "lucide-react"
+import { Ticket, Trophy, Sparkles, Drumstick, CandyCane, Shirt, Milk, ShieldQuestion, CakeSlice, SquareSquare, Beaker, Footprints, Box, Utensils, Sticker } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -31,7 +31,10 @@ export default function RaffleLandingPage() {
     { id: 15, name: "15. Dos pares de medias (Black cat)", icon: <Footprints className="h-5 w-5 text-amber-500" /> },
     { id: 16, name: "16. Un pollo 🍗", icon: <Drumstick className="h-5 w-5 text-amber-500" /> },
     { id: 17, name: "17. Un pollo 🍗", icon: <Drumstick className="h-5 w-5 text-amber-500" /> },
-    { id: 19, name: "18. Un espejo decorativo", icon: <SquareSquare className="h-5 w-5 text-amber-500" /> },
+    { id: 18, name: "18. Un espejo decorativo", icon: <SquareSquare className="h-5 w-5 text-amber-500" /> },
+    { id: 19, name: "19. Una Hamburguesa (SMBC) 🍔", icon: <Utensils className="h-5 w-5 text-amber-500" /> },
+    { id: 20, name: "20. Combo de stickers (Cuis sm)", icon: <Sticker className="h-5 w-5 text-amber-500" /> },
+    { id: 21, name: "21. Premio sorpresa (Minibella Bebé)", icon: <ShieldQuestion className="h-5 w-5 text-amber-500" /> },
   ]
 
   const availableTickets = tickets.filter((ticket) => ticket.state == 'available')
