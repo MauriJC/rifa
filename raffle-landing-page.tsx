@@ -256,6 +256,118 @@ export default function RaffleLandingPage() {
               </CardContent>
             </Card>
 
+            <Card className="overflow-hidden border-2 border-primary/20 shadow-md hover:shadow-lg transition-all">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <img src="/logos/cuis.jpg" alt="Cuis Stickers logo" className="rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Cuis Stickers</h3>
+                  <p className="text-muted-foreground mb-4">Colaborador destacado</p>
+                  <p className="text-sm text-muted-foreground">Gracias por su generosa contribución a nuestra causa</p>
+
+                  <a
+                    href="https://www.instagram.com/cuis.sm/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                    @cuis.sm
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-2 border-primary/20 shadow-md hover:shadow-lg transition-all">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <img src="/logos/mb.jpg" alt="MB logo" className="rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Minibella Bebé</h3>
+                  <p className="text-muted-foreground mb-4">Colaborador destacado</p>
+                  <p className="text-sm text-muted-foreground">Gracias por su generosa contribución a nuestra causa</p>
+
+                  <a
+                    href="https://www.instagram.com/minibella_bebe/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                    @minibella_bebe
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-2 border-primary/20 shadow-md hover:shadow-lg transition-all">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <img src="/logos/smbc.jpg" alt="SMBC Stickers logo" className="rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Santa Maria Burger Company</h3>
+                  <p className="text-muted-foreground mb-4">Colaborador destacado</p>
+                  <p className="text-sm text-muted-foreground">Gracias por su generosa contribución a nuestra causa</p>
+
+                  <a
+                    href="https://www.instagram.com/smburgercompany/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                    @smburgercompany
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+
           </div>
         </div>
       </section>
