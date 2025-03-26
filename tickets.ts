@@ -201,7 +201,7 @@ export const tickets: { "id": number, "state": string }[] = [
     { "id": 200, "state": "unavailable" },
     { "id": 201, "state": "unavailable" },
     { "id": 202, "state": "unavailable" },
-    { "id": 203, "state": "unavailable" },
+    { "id": 203, "state": "available" },
     { "id": 204, "state": "unavailable" },
     { "id": 205, "state": "unavailable" },
     { "id": 206, "state": "available" },
