@@ -10,6 +10,7 @@ import { tickets as tick } from './tickets';
 
 export default function RaffleLandingPage() {
   // For demo purposes, we'll randomly mark some tickets as sold
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [tickets, setTickets] = useState<Array<{ id: number; state: string }>>(tick)
   const [activeTab, setActiveTab] = useState("all")
 
@@ -35,6 +36,7 @@ export default function RaffleLandingPage() {
     { id: 19, name: "19. Una Hamburguesa (SMBC) 🍔", icon: <Utensils className="h-5 w-5 text-amber-500" /> },
     { id: 20, name: "20. Combo de stickers (Cuis sm)", icon: <Sticker className="h-5 w-5 text-amber-500" /> },
     { id: 21, name: "21. Premio sorpresa (Minibella Bebé)", icon: <ShieldQuestion className="h-5 w-5 text-amber-500" /> },
+    { id: 22, name: "22. Una prenda de vestir de Polo Wellington", icon: <Shirt className="h-5 w-5 text-amber-500" /> },
   ]
 
   const availableTickets = tickets.filter((ticket) => ticket.state == 'available')
