@@ -10,39 +10,39 @@ import { tickets as tick } from './tickets';
 
 export default function RaffleLandingPage() {
   // For demo purposes, we'll randomly mark some tickets as sold
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [tickets, setTickets] = useState<Array<{ id: number; state: string }>>(tick)
-  const [activeTab, setActiveTab] = useState("all")
+
+  //const [tickets, setTickets] = useState<Array<{ id: number; state: string }>>(tick)
+  //const [activeTab, setActiveTab] = useState("all")
 
   const prizes = [
-    { id: 1, name: "1. Un fardo de azúcar 🧁", icon: <CandyCane className="h-5 w-5 text-amber-500" /> },
-    { id: 2, name: "2. Un fardo de leche líquida 🐄", icon: <Milk className="h-5 w-5 text-amber-500" /> },
-    { id: 3, name: "3. Un bizcochuelo 😋", icon: <CakeSlice className="h-5 w-5 text-amber-500" /> },
-    { id: 4, name: "4. Un pollo 🍗", icon: <Drumstick className="h-5 w-5 text-amber-500" /> },
-    { id: 5, name: "5. Un voucher para compra en American Closet 😍👗👚", icon: <Shirt className="h-5 w-5 text-amber-500" /> },
-    { id: 6, name: "6. Un premio sorpresa", icon: <ShieldQuestion className="h-5 w-5 text-amber-500" /> },
-    { id: 7, name: "7. Un regalo sorpresa🪅", icon: <ShieldQuestion className="h-5 w-5 text-amber-500" /> },
-    { id: 8, name: "8. Un toallón", icon: <Sparkles className="h-5 w-5 text-amber-500" /> },
-    { id: 9, name: "9. Una tarta de manzana", icon: <CakeSlice className="h-5 w-5 text-amber-500" /> },
-    { id: 10, name: "10. Un budín", icon: <CakeSlice className="h-5 w-5 text-amber-500" /> },
-    { id: 11, name: "11. Un budín", icon: <CakeSlice className="h-5 w-5 text-amber-500" /> },
-    { id: 12, name: "12. Un mate de cerámica", icon: <Beaker className="h-5 w-5 text-amber-500" /> },
-    { id: 13, name: "13. Un mate de cerámica", icon: <Beaker className="h-5 w-5 text-amber-500" /> },
-    { id: 14, name: "14. Dos pares de medias (Black cat)", icon: <Footprints className="h-5 w-5 text-amber-500" /> },
-    { id: 15, name: "15. Dos pares de medias (Black cat)", icon: <Footprints className="h-5 w-5 text-amber-500" /> },
-    { id: 16, name: "16. Un pollo 🍗", icon: <Drumstick className="h-5 w-5 text-amber-500" /> },
-    { id: 17, name: "17. Un pollo 🍗", icon: <Drumstick className="h-5 w-5 text-amber-500" /> },
-    { id: 18, name: "18. Un espejo decorativo", icon: <SquareSquare className="h-5 w-5 text-amber-500" /> },
-    { id: 19, name: "19. Una Hamburguesa (SMBC) 🍔", icon: <Utensils className="h-5 w-5 text-amber-500" /> },
-    { id: 20, name: "20. Combo de stickers (Cuis sm)", icon: <Sticker className="h-5 w-5 text-amber-500" /> },
-    { id: 21, name: "21. Premio sorpresa (Minibella Bebé)", icon: <ShieldQuestion className="h-5 w-5 text-amber-500" /> },
-    { id: 22, name: "22. Una prenda de vestir de Polo Wellington", icon: <Shirt className="h-5 w-5 text-amber-500" /> },
+    { id: 1, name: "1. Un fardo de azúcar 🧁", icon: <CandyCane className="h-5 w-5 text-amber-500" />, winner: "Gabriela Herrero - 729" },
+    { id: 2, name: "2. Un fardo de leche líquida 🐄", icon: <Milk className="h-5 w-5 text-amber-500" />, winner: "Emma Cedron - 406" },
+    { id: 3, name: "3. Un bizcochuelo 😋", icon: <CakeSlice className="h-5 w-5 text-amber-500" />, winner: "Santiago Pastrana - 80" },
+    { id: 4, name: "4. Un pollo 🍗", icon: <Drumstick className="h-5 w-5 text-amber-500" />, winner: "Renata Ghiazza - 176" },
+    { id: 5, name: "5. Un voucher para compra en American Closet 😍👗👚", icon: <Shirt className="h-5 w-5 text-amber-500" />, winner: "Karen Guzman - 756" },
+    { id: 6, name: "6. Un premio sorpresa", icon: <ShieldQuestion className="h-5 w-5 text-amber-500" />, winner: "Calixto Escalante - 600" },
+    { id: 7, name: "7. Un regalo sorpresa🪅", icon: <ShieldQuestion className="h-5 w-5 text-amber-500" />, winner: "Silvio Soria - 448" },
+    { id: 8, name: "8. Un toallón", icon: <Sparkles className="h-5 w-5 text-amber-500" />, winner: "Emiro Cesar Lagoria - 283" },
+    { id: 9, name: "9. Una tarta de manzana", icon: <CakeSlice className="h-5 w-5 text-amber-500" />, winner: "Julian Juarez - 73" },
+    { id: 10, name: "10. Un budín", icon: <CakeSlice className="h-5 w-5 text-amber-500" />, winner: "Danae Abigail Comez - 294" },
+    { id: 11, name: "11. Un budín", icon: <CakeSlice className="h-5 w-5 text-amber-500" />, winner: "Delia Centeno - 524" },
+    { id: 12, name: "12. Un mate de cerámica", icon: <Beaker className="h-5 w-5 text-amber-500" />, winner: "Bernardo Pastrana - 676" },
+    { id: 13, name: "13. Un mate de cerámica", icon: <Beaker className="h-5 w-5 text-amber-500" />, winner: "Lionel Ramos - 439" },
+    { id: 14, name: "14. Dos pares de medias (Black cat)", icon: <Footprints className="h-5 w-5 text-amber-500" />, winner: "Ignacio Juarez - 79" },
+    { id: 15, name: "15. Dos pares de medias (Black cat)", icon: <Footprints className="h-5 w-5 text-amber-500" />, winner: "Lucia Colque - 58" },
+    { id: 16, name: "16. Un pollo 🍗", icon: <Drumstick className="h-5 w-5 text-amber-500" />, winner: "Jorgelina Morales  - 587" },
+    { id: 17, name: "17. Un pollo 🍗", icon: <Drumstick className="h-5 w-5 text-amber-500" />, winner: "Milagros Jimenez - 327" },
+    { id: 18, name: "18. Un espejo decorativo", icon: <SquareSquare className="h-5 w-5 text-amber-500" />, winner: "Diego Palacios - 395" },
+    { id: 19, name: "19. Una Hamburguesa (SMBC) 🍔", icon: <Utensils className="h-5 w-5 text-amber-500" />, winner: "Jose L Ocampo - 717" },
+    { id: 20, name: "20. Combo de stickers (Cuis sm)", icon: <Sticker className="h-5 w-5 text-amber-500" />, winner: "Silvia Bustos Thames - 110" },
+    { id: 21, name: "21. Premio sorpresa (Minibella Bebé)", icon: <ShieldQuestion className="h-5 w-5 text-amber-500" />, winner: "Salvatierra Daira - 747" },
+    { id: 22, name: "22. Una prenda de vestir de Polo Wellington", icon: <Shirt className="h-5 w-5 text-amber-500" />, winner: "Pablo Colque - 50" },
   ]
 
-  const availableTickets = tickets.filter((ticket) => ticket.state == 'available')
-  const soldTickets = tickets.filter((ticket) => ticket.state == 'unavailable')
+  // const availableTickets = tickets.filter((ticket) => ticket.state == 'available')
+  //const soldTickets = tickets.filter((ticket) => ticket.state == 'unavailable')
 
-  const displayTickets = activeTab === "all" ? tickets : activeTab === "available" ? availableTickets : soldTickets
+  //const displayTickets = activeTab === "all" ? tickets : activeTab === "available" ? availableTickets : soldTickets
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
@@ -98,67 +98,31 @@ export default function RaffleLandingPage() {
         </div>
       </section>
 
-      {/* Tickets Section */}
-      <section className="py-12 container px-4 md:px-6">
-        <div className="space-y-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <h2 className="text-3xl font-bold">Números de Rifa</h2>
-
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-gray-200 border border-gray-300"></div>
-                <span className="text-sm">Disponible</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-primary/80 border border-primary"></div>
-                <span className="text-sm">Vendido</span>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-medium">Disponibles: {availableTickets.length}</span>
-              <span className="text-sm font-medium">Vendidos: {soldTickets.length}</span>
-            </div>
-          </div>
-
-          <Tabs defaultValue="all" className="w-full" onValueChange={setActiveTab}>
-            <TabsList className="grid w-full grid-cols-3 mb-4">
-              <TabsTrigger value="all">Todos</TabsTrigger>
-              <TabsTrigger value="available">Disponibles</TabsTrigger>
-              <TabsTrigger value="sold">Vendidos</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value={activeTab} className="mt-0">
-              <div className="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-15 gap-2">
-                {displayTickets.map((ticket) => (
-                  <Button
-                    key={ticket.id}
-                    variant="outline"
-                    className={`h-12 w-full ${ticket.state == 'unavailable'
-                      ? "bg-primary/80 text-primary-foreground border-primary hover:bg-primary/70 hover:text-primary-foreground"
-                      : "bg-background hover:bg-accent"
-                      }`}
-                    disabled={ticket.state == 'unavailable'}
-                  >
-                    {ticket.id}
-                  </Button>
-                ))}
-              </div>
-            </TabsContent>
-
-          </Tabs>
-
-          <div className="flex justify-center mt-8">
-            <Button className="bg-gradient-to-r from-primary to-pink-600 hover:from-primary/90 hover:to-pink-600/90 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all">
-              <a
-                href="https://wa.me/543815584640?text=Hola%2C%20me%20gustaria%20comprar%20numeros%20de%20la%20rifa"
-                target="_blank"
-                rel="noopener noreferrer">
-                ¡Compra tu número ahora!
-              </a>
-            </Button>
-          </div>
+      <section>
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold">Ganadores de la rifa</h2>
+          <p className="text-muted-foreground mt-2">
+            Gracias a todos por haber colaborado con esta causa
+          </p>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          {
+            prizes.map(prize => (
+              <div key={prize.id} className="bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-md border border-primary/10">
+                <div className="flex items-center gap-3">
+                  <div className="bg-primary/10 p-2 rounded-full">
+                    {prize.icon}
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-800">{prize.id}. {prize.winner}</p>
+                  </div>
+                </div>
+              </div>
+            ))
+
+          }
+        </div>
+
       </section>
 
       {/* Collaborators Section */}
